@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main() {
+    float a1, a2, a3, maiorNota, media;
+
+    printf("Calculadora de Notas\n");
+
+    // Solicitar as notas
+    printf("\nDigite a nota da A1 (0 à 5): ");
+    scanf("%f", &a1);
+
+    printf("Digite a nota da A2 (0 à 5): ");
+    scanf("%f", &a2);
+
+    // Calcular a média
+    media = (a1 + a2) / 2;  // Correção aqui, divisão por 2
+
+    // Exibir as notas e a média
+    printf("\nNota A1: %.2f\n", a1);  // Corrigido para imprimir as variáveis
+    printf("Nota A2: %.2f\n", a2);  // Corrigido para imprimir as variáveis
+    printf("Média Final: %.2f\n", media);  // Corrigido para imprimir a média
+
+    // Determinar a situação do aluno
+    if (media >= 6) {
+        printf("Situacao: APROVADO\n");
+    } else if (media >= 5) {  // Correção de 'final' para 'media's
+        printf("Situacao: EM RECUPERAÇÃO\n");
+    } else {
+        printf("Situacao: AF / REPROVADO\n");
+        
+        printf("Nota da prova de recuperção: ");
+        scanf("%f", &a3);
+        
+        // Definir a maior nota entre a1 e a2
+        if (a1 > a2) {
+           maiorNota = a1
+        } else {
+           maiorNota = a2        
+        }
+        media = (a3 + maiorNota) / 2;  // Correção aqui, divisão por 2
+        
+        // Exibir as notas e a média
+        printf("Nota A3: %.2f\n", a3);  // Corrigido para imprimir as variáveis
+        printf("Média Final: %.2f\n", media);  // Corrigido para imprimir a média        
+            
+        // Determinar a situação do aluno
+        if (media >= 6) {
+            printf("Situacao: APROVADO\n");
+        } else {
+            printf("Situacao: REPROVADO\n");        
+        }
+
+    printf("\nPrograma encerrado.\n");
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+Boole, Turing e Backus, mestres da computação... e eu, tentando entender uma fração de suas jornadas.
+
+Estava montando os slides do meu pitch sobre lógica booleana e resolvi fazer essa publicação contextualizando brevemente essas figuras históricas que pavimentaram o caminho para a lógica booleana utilizada nas linguagens modernas.
+
+George Boole (1815–1864)
+Criador da álgebra booleana, desenvolveu um sistema lógico-matemático como uma forma de raciocínio de decisões baseada em valores binários (verdadeiro ou falso), sem imaginar suas futuras aplicações na computação.
+
+Alan Turing (1912–1954)
+Foi o responsável por trazer a lógica booleana para o universo da computação. Com sua Máquina de Turing, demonstrou como processos lógicos podiam ser transformados em instruções executáveis, lançando as bases da teoria da computação e dos algoritmos.
+
+John W. Backus (1924–2007)
+Criador do Fortran, a primeira linguagem de programação de alto nível amplamente adotada, e o primeiro a incorporar a lógica booleana diretamente em uma linguagem de programação. Esse modelo lógico foi seguido por praticamente todas as linguagens modernas, que até hoje utilizam operadores e estruturas baseadas nessa lógica.
+
+Esses visionários transformaram a lógica booleana em uma poderosa ferramenta de programação, moldando o mundo digital que conhecemos.
+E hoje, ela está presente em cada "if", "while" e "for"
+
+#CiênciaDaComputação #ÁlgebraBooleana #Lógica #Programação #Computação #História #Boole #Turing #Backus #Algoritmos #LinguagensDeProgramação #Fortran #MáquinaDeTuring #OperadoresLógicos #MundoDigital

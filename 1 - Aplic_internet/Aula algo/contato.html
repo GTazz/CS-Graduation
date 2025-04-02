@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="enviar_dados" method="post">
+      <br />
+      <br />
+      <label for="nome">Digite seu nome</label>
+      <br />
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+      <br />
+      <br />
+      <label for="email">Digite seu E-mail</label>
+      <br />
+      <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Digite seu E-mail"
+      />
+      <br />
+      <br />
+      <label for="avaliar">O que achou do site?</label>
+      <br />
+      <input type="radio" name="avaliar" value="muitobom" checked />Muito bom<br />
+      <input type="radio" name="avaliar" value="bom" />Bom<br />
+      <input type="radio" name="avaliar" value="ruim" />Ruim<br />
+      <input type="radio" name="avaliar" value="muito ruim" />Muito ruim<br />
+      <br />
+      <label for="nota">Que nota dá ao site?</label>
+      <br />
+      <select>
+        <option value="0">Nota 0</option>
+        <option value="1">Nota 1</option>
+        <option value="2">Nota 2</option>
+        <option value="3">Nota 3</option>
+      </select>
+      <br />
+      <br />
+      <textarea
+      name="sugestao"
+      rows="10"
+      cols="30"
+      maxlength="30"
+      placeholder="Digite sua opinião"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Enviar" onclick="alert('ENVIADO!')" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

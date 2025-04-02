@@ -1,0 +1,34 @@
+INSTRUÇÕES DE COMO FRITAR UM OVO
+
+Vá até a geladeira
+Tem ovo na geladeira?
+    Se não:
+        Feche a geladeira
+        Vá comprar ovo
+        vá para etapa 10
+    Se sim:
+        Pegue o ovo
+        Feche a geladeira
+        Coloque o ovo na mesa
+        Vá até o armário e pegue uma frigideira
+        Feche o armário
+        Deixe a frigideira no fogão
+        Pegue azeite/óleo/manteiga no armário de compras
+        Feche o armário
+        Ligue o fogo da boca do fogão em fogo alto
+        Adicione um colher de azeite/óleo/manteiga na frigideira
+        Espere esquentar por 20 segundos
+        Quebre o ovo em uma xícara
+        O ovo tá podre?
+            Se sim:
+                Pegue outro ovo e volte para a etapa 21
+            Se não:
+                Coloque o ovo na frigideira
+                Adicione sal
+                Aguarde por 1 minuto
+                Vire o ovo com muita habilidade
+                Desligue o fogo
+                Sirva o ovo
+                Coma o ovo
+                Lave a louça
+                Seja feliz

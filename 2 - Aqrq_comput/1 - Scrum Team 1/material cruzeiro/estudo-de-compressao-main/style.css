@@ -1,0 +1,96 @@
+.bodyBackground{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    opacity: 40%;
+}
+
+.imgMahle {
+    max-width: 200px;
+}
+
+.header{
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.footer{
+    -webkit-box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.accordion{
+    font-family:"Montserrat";
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    --bs-accordion-bg: #f5f5f5;
+    --bs-accordion-color: #000000;
+    --bs-accordion-btn-bg: #000220;
+    --bs-accordion-btn-color: #ffffff;
+    --bs-accordion-active-bg: #ff0000d2;
+    --bs-accordion-active-color: #ffffff;
+}
+
+.accordion-button{
+    font-weight: 600;
+}
+
+.accordion-button:focus{
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+.accordion-button::after{
+    background-image: none;
+    background: url(./svg/caret-down-fill.svg);
+    width: 15px!important;
+    height: 15px!important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    background: url(./svg/caret-down-fill.svg);
+}
+
+.p-5{
+    padding-top: 50px!important;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+    padding-bottom: 100px!important;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #000220;
+    --bs-btn-bg: #ffffff00;
+    --bs-btn-border-color: #000220;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #000220ef;
+    --bs-btn-hover-border-color: #000220;
+    --bs-btn-focus-shadow-rgb: #000220  ;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #000220;
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+
+  .copyright{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #000220;
+  }
+
+  .list{
+    padding-left: 30px;
+  }
+  .sublist{
+    padding-left: 60px;
+  }
