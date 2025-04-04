@@ -1,24 +1,41 @@
-// Script para o Semáforo
-// Autor: Gabriel Tazz
-// Data: 28/03/2025
-
 programa {
-  funcao inicio() {
-    logico botao
-    
-    escreva("Pressione o botão para iniciar o semáforo")
-    leia(botao)
+  inclua biblioteca Util
+
+  cadeia corFarolCarro, corFarolPedestre
+  inteiro segundos
+
+  funcao mudarFarol (cadeia corCarro, inteiro segundosCarro) {
+
+    se (corCarro == "vermelho") {
+      corFarolPedestre = "verde"
+    } senao {
+      corFarolPedestre = "vermelho"
+    }
+
+    // Aguardar tempo de semáforo e mostra tempo na tela]
+    para (inteiro i = segundosCarro; i >= 0; i--) {  
+      Util.aguarde(1000)
+      escreva("\n\n\n\n\n\n\nPassagem de carro em: ", corCarro)
+      escreva("\nPassagem de pedestre: ", corFarolPedestre)
+      escreva("\nContagem regressiva ", i)
+    }       
+  }
+  
+  funcao inicio() 
+  {
+    enquanto (verdadeiro) {
+      se (corFarolCarro == "verde") {
+        corFarolCarro = "amarelo"
+        segundos = 5 // 15
+      } senao se (corFarolCarro == "amarelo") {
+        corFarolCarro = "vermelho"
+        segundos = 5 // 45
+      } senao {
+        corFarolCarro = "verde"
+        segundos = 5 // 30
+      }
+      mudarFarol(corFarolCarro, segundos)
+    }
   }
 }
 
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 202; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
