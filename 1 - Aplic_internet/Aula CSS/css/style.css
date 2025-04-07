@@ -1,0 +1,17 @@
+body {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paragraph {
+    color: #1fbb00
+}
+
+#firstTitle {
+    color: #17209b;
+}
+
+h2 {
+    color: rgb(170, 159, 11);
+}
