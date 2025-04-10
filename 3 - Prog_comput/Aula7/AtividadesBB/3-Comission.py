@@ -7,15 +7,11 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("Classe eleitoral", "<>-+-")
+print_title("Comissão de vendas")
 
-age = int(input("Digite a sua idade: "))
+salary = float(input("Salário fixo do funcionário: R$"))
+commission = float(input("Quantidade de vendas: R$")) * 0.04
 
-if 0 < age < 16:
-    print("\nVocê não pode votar!\n")
-elif 18 <= age <= 65:
-    print("\nVocê é obrigado a votar\n")
-elif 16 <= age <= 18 or age > 65:
-    print("\nVocê Vota se quiser\n")
-else:
-    print("\nIdade inválida!\n")
+total = salary + commission
+
+print(f"\nComissão: R${commission:.2f}\nTotal: R${total:.2f}\n")

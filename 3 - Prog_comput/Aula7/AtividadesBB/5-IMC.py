@@ -1,3 +1,4 @@
+from math import trunc
 from os import system as cmd
 
 
@@ -7,15 +8,11 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("Classe eleitoral", "<>-+-")
+print_title("IMC homem e mulher")
 
-age = int(input("Digite a sua idade: "))
+gender = input("Seu sexo é Masculino ou Feminino? [M/F] ").strip()[0].upper()
+height = float(input("Informe sua altura em Metros: "))
 
-if 0 < age < 16:
-    print("\nVocê não pode votar!\n")
-elif 18 <= age <= 65:
-    print("\nVocê é obrigado a votar\n")
-elif 16 <= age <= 18 or age > 65:
-    print("\nVocê Vota se quiser\n")
-else:
-    print("\nIdade inválida!\n")
+weight = (72.7*height) - 58 if gender == "M" else (62.1*height) - 44.7
+
+print(f"\nO peso ideal para você seria {weight:.2f}\n")

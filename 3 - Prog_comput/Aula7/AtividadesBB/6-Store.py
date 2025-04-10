@@ -1,3 +1,4 @@
+from math import ceil
 from os import system as cmd
 
 
@@ -7,15 +8,13 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("Classe eleitoral", "<>-+-")
+print_title("Loja de tintas")
 
-age = int(input("Digite a sua idade: "))
+area = float(input("Área à ser pintada: "))
 
-if 0 < age < 16:
-    print("\nVocê não pode votar!\n")
-elif 18 <= age <= 65:
-    print("\nVocê é obrigado a votar\n")
-elif 16 <= age <= 18 or age > 65:
-    print("\nVocê Vota se quiser\n")
-else:
-    print("\nIdade inválida!\n")
+cans = ceil((area / 3) / 18)
+
+print(f"""
+Latas a serem compradas: {cans}
+Preço total: R${cans*80:.2f}
+""")

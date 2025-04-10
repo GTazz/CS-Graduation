@@ -7,15 +7,14 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("Classe eleitoral", "<>-+-")
+print_title("De segundos para horas")
 
-age = int(input("Digite a sua idade: "))
+seconds = float(input("Digite um tempo em segundos: "))
+hours = seconds // 3600
+rest = seconds % 3600
+minutes = rest // 60
+seconds = rest % 60
+formatted = f"{hours}h:{minutes}m:{seconds}s"
 
-if 0 < age < 16:
-    print("\nVocê não pode votar!\n")
-elif 18 <= age <= 65:
-    print("\nVocê é obrigado a votar\n")
-elif 16 <= age <= 18 or age > 65:
-    print("\nVocê Vota se quiser\n")
-else:
-    print("\nIdade inválida!\n")
+
+print(f"Esse tempo em segundos é equivalente a {hours} horas, {minutes} minutos e {seconds} segundos.\n\nFormatado: {formatted}\n")
