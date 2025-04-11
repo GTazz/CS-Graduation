@@ -26,13 +26,13 @@ programa {
     enquanto (verdadeiro) {
       se (corFarolCarro == "verde") {
         corFarolCarro = "amarelo"
-        segundos = 5 // 15
+        segundos = 5
       } senao se (corFarolCarro == "amarelo") {
         corFarolCarro = "vermelho"
-        segundos = 5 // 45
+        segundos = 10
       } senao {
         corFarolCarro = "verde"
-        segundos = 5 // 30
+        segundos = 20
       }
       mudarFarol(corFarolCarro, segundos)
     }
