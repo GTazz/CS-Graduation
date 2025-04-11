@@ -1,0 +1,56 @@
+🟢 Roteiro do Funcionamento do Semáforo
+1. Início
+Declarar as variáveis:
+
+corFarolCarro (texto)
+
+corFarolPedestre (texto)
+
+segundos (inteiro)
+
+contagem (inteiro)
+
+2. Início do Loop A (infinito)
+Verifica o estado do farol dos carros e realiza as trocas de cor de acordo com a seguinte lógica:
+
+a) Se corFarolCarro for "verde":
+Define corFarolCarro = "amarelo"
+
+Mantém corFarolPedestre = "vermelho"
+
+Define segundos = 10
+
+b) Se corFarolCarro for "amarelo":
+Define corFarolCarro = "vermelho"
+
+Define corFarolPedestre = "verde"
+
+Define segundos = 5
+
+c) Se corFarolCarro não for nem "verde" nem "amarelo" (ou seja, é "vermelho" ou indefinido):
+Define corFarolCarro = "verde"
+
+Define corFarolPedestre = "vermelho"
+
+Define segundos = 20
+
+3. Atualiza a contagem
+contagem = segundos
+
+4. Início do Loop B (contagem regressiva)
+Enquanto contagem > 0, repete:
+
+Exibe:
+
+Passagem de carro em: corFarolCarro
+
+Passagem de pedestre em: corFarolPedestre
+
+Contagem regressiva: contagem
+
+Reduz contagem = contagem - 1
+
+Aguarda 1 segundo
+
+6. Quando contagem == 0
+Retorna para o Loop A
