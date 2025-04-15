@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+}
+
+#topo_geral {
+    background-color: #222;
+    /* background-image: url(../image/cachorrinho.jpeg); */
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: red;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+
+}
+
+li:hover {
+    color: red;
+}
+
+nav {
+    background-color: #222;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+#foto {
+    height: 350px;
+    width: 500px;
+    align-items: center;
+}
+
+#foto:hover {
+    width: 600px;
+    height: 450px;
+    border: 3px solid red;
+}
+
+span {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+p {
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+figure {
+    color: red;
+
+
+}
