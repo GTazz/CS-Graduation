@@ -7,6 +7,7 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("")
+print_title("Iteração numérica dinâmica")
 
-
+print(f"De 1 à 50, de 1 em 1: {list(range(0, 51))}\n")
+print(f"De 52 à 100, de 2 em 2: {list(range(52, 101, 2))}\n")

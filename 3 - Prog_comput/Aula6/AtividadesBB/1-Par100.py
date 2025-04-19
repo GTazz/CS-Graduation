@@ -7,6 +7,6 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-print_title("")
+print_title("Números pares de 0 à 100")
 
-
+print(f"{list(range(0, 101, 2))}\n")
