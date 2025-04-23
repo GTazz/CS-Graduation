@@ -32,3 +32,4 @@ print("\033[1;33mEMPATE!\033[m\n" if symbol == comp_symbol else
       "\033[1;32mVOCÊ VENCEU!\033[m\n" if (symbol == "pedra" and comp_symbol == "tesoura") or (symbol == "papel" and comp_symbol == "pedra") or (symbol == "tesoura" and comp_symbol == "papel") else 
       "\033[1;31mVOCÊ PERDEU!\033[m\n"
       )
+
