@@ -7,18 +7,18 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
     print(f"{t_lines}\n\033[1;33m{prjct_title.upper()}\n{t_lines}\n") # imprime o título junto as linhas
 
 
-
 while True:
     try:
-        print_title(" Verifica ano bissexto ", "-=-/")
-        year = int("".join(input("Digite um ano: ").split()))
+        print_title("Somando um número com sua versão inversa", "+-0-+-1-")
+        
+        num = "".join(input("Digite um número inteiro de três algarismos: ").split()).lstrip("+")
+        if len(num.lstrip("-")) != 3:
+            continue
+        
+        num_rev = int(num[::-1]) if num[0] != "-" else int("-" + num[:0:-1])
+        num = int(num)
     except ValueError:
-        continue
-    if year < 1:
         continue
     break
 
-print(
-    f"\n\033[1;32mO ano {year} é bissexto!\033[m\n" if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) else 
-    f"\n\033[1;31mO ano {year} não é bissexto!\033[m\n"
-)
+print(f"\nSoma: {num} + {num_rev} = \033[4m{num + num_rev}\033[m\n")
