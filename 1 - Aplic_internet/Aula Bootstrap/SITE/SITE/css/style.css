@@ -1,0 +1,41 @@
+body{
+    background-color: #d2d2c1;
+    background-image: url(../image/fundo.png);
+    font-size: 16px;
+    font-family: Arial, Helvetica;
+}
+#principal{
+    width: 800px;
+}
+#topo{
+    background-color:#c5c5b2;
+    padding: 20px;
+       
+}
+#conteudo{
+    background-color: #e8e8d9;
+     
+    padding: 10px;
+}
+#rodape{
+  
+    text-align: center;
+ 
+}
+#forma{
+    background-color: aqua;
+}
+.produto{
+    background-color: gray;
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}

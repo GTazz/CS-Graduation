@@ -1,0 +1,36 @@
+body{
+    background-color: #d2d2c1;
+    background-image: url(../image/fundo.png);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#principal{
+    /*border: 1px solid red;*/
+    width: 900px;
+}
+#menu{
+    background-color: #c5c5b2;
+    padding: 20px;
+}
+#conteudo{
+    background-color: #e8e8d9;
+    padding: 10px;
+}
+#rodape{
+    text-align: center;
+}
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h1,h2{
+    color: #828271;
+    font-size: 1.2em;
+}
+.imagem{
+    border: #c3c3ae solid 10px;
+
+}
