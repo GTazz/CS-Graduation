@@ -1,0 +1,33 @@
+INICIO
+1. Leva Galinha   (>)🚶🐔
+2. Volta Sozinho  (<)🚶
+3. Leva Milho     (>)🚶🌽
+4. Volta Galinha  (<)🚶🐔
+5. Leva Raposa	  (>)🚶🦊
+6. Volta Sozinho  (<)🚶
+7. Leva Galinha   (>)🚶🐔
+FIM
+
+A = 10
+B = 7
+C = 12
+
+------------------------------------------
+
+SE A < B:
+  SE B < C:
+    RETORNA (A, B, C)
+  SENÃO:
+    RETORNA (A, C, B)
+SE B < A:
+  SE A < C:
+    RETORNA (B, A, C)
+  SENÃO:
+    RETORNA (B, C, A)
+SE C < B:
+  SE B < A:
+    RETORNA (C, B, A)
+  SENÃO:
+    RETORNA (C, A, B)
+
+------------------------------------------
