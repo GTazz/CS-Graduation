@@ -10,13 +10,13 @@ def print_title(prjct_title: str, style: str="-x-=") -> None:
 
 print_title("Equação de 2º grau")
 
-a = int(input("Digite o valor de a: "))
+a = float(input("Digite o valor de a: "))
 
 if a == 0:
     print("\nNão é equação do segundo grau\n")
 else:
-    b = int(input("Digite o valor de b: "))
-    c = int(input("Digite o valor de c: "))
+    b = float(input("Digite o valor de b: "))
+    c = float(input("Digite o valor de c: "))
     delta = b**2 - 4*a*c
 
     if delta < 0:
