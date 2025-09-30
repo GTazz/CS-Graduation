@@ -82,7 +82,7 @@ public class Main {
         System.out.println();
         
         System.out.println("Números primos:");
-        Main.primeNumbersUpTo(50);
+        Main.primeNumbersUpTo(200);
         System.out.println();
     }
 }
