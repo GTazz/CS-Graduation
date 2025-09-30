@@ -11,17 +11,16 @@ public class App {
     }
 
     public static int fibonacciLoop(int n) {
-        int fibo = 1;
-        int old_fibo = 1;
-        int old_old_fibo;
+
+        int previous = 1, current = 1;
 
         for (int i = 2; i < n; i++) {
-            old_old_fibo = old_fibo;
-            old_fibo = fibo;
-
-            fibo = (old_old_fibo + old_fibo);
+            int next = previous + current;
+            previous = current;
+            current = next;
         }
-        return fibo;
+        
+        return current;
     }
     
     public static void main(String[] args) throws Exception {
@@ -30,22 +29,20 @@ public class App {
         fiboOutput = App.fibonacciLoop(11);
         System.out.println(fiboOutput);
 
-        // int count;
+    //     int count;
 
-        // count = 0;
-        // do {
-        //     System.out.println(++count);
+    //     count = 0;
+    //     do {
+    //         System.out.println(++count);
             
-        // } while (count < 5);
+    //     } while (count < 5);
         
-        // count = 0;
-        // while (true) {
-        //     System.out.println(++count);
+    //     count = 0;
+    //     while (true) {
+    //         System.out.println(++count);
 
-        //     if (!(count < 5)) {
-        //         break;
-        //     };
-        // }
+    //         if (!(count < 5)) break;
+    //     }
         
     }
 }
