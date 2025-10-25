@@ -15,8 +15,8 @@ public class App {
                 if (present > next) {
                     array[i] = next;
                     array[i + 1] = present;
+                    flag = true;
                 }
-                flag = true;
             }
 
             System.out.println(++count + "º Passada");
