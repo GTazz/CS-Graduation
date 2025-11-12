@@ -131,3 +131,6 @@ celerybeat-schedule
 # Generated files
 *.log
 *.tmp
+
+# project related
+*.csv
