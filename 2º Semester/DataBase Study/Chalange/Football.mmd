@@ -1,0 +1,57 @@
+erDiagram
+
+    EQUIPES {
+        int id_equipe PK
+        string nome_equipe
+        string nome_tecnico
+        string clube
+    }
+
+    JOGADORES {
+        string CPF_jogador PK
+        string nome_jogador
+        string tipo
+        int id_equipe FK
+    }
+
+    UNIFORMES {
+        int id_equipe PK
+        int numero_uniforme PK
+        string cor_camisa
+        string cor_meia
+        string cor_calcao
+    }
+
+    ESTADIOS {
+        int id_estadio PK
+        string nome_estadio
+        string cidade
+    }
+
+    JUIZES {
+        string CPF_juiz PK
+        string nome_juiz
+    }
+
+    PARTIDAS {
+        int id_partida PK
+        int id_estadio FK
+        string CPF_juiz FK
+    }
+
+    PARTIDA_EQUIPES {
+        int id_partida PK
+        int id_equipe PK
+        int gols
+        int cartao_vermelho
+        int cartao_amarelo
+    }
+
+    EQUIPES ||--o{ JOGADORES : possui
+    EQUIPES ||--o{ UNIFORMES : possui
+
+    ESTADIOS ||--o{ PARTIDAS : recebe
+    JUIZES ||--o{ PARTIDAS : apita
+
+    PARTIDAS ||--o{ PARTIDA_EQUIPES : possui
+    EQUIPES  ||--o{ PARTIDA_EQUIPES : participa
