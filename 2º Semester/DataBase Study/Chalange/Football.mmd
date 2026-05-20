@@ -1,57 +1,60 @@
 erDiagram
 
     EQUIPES {
-        int id_equipe PK
-        string nome_equipe
-        string nome_tecnico
-        string clube
+        INT id_equipe PK
+        VARCHAR nome_equipe
+        VARCHAR nome_tecnico
+        VARCHAR clube
     }
 
     JOGADORES {
-        string CPF_jogador PK
-        string nome_jogador
-        string tipo
-        int id_equipe FK
+        VARCHAR CPF_jogador PK
+        VARCHAR nome_jogador
+        VARCHAR tipo
+        INT id_equipe FK
     }
 
     UNIFORMES {
-        int id_equipe PK
-        int numero_uniforme PK
-        string cor_camisa
-        string cor_meia
-        string cor_calcao
+        INT id_equipe PK, FK
+        INT numero_uniforme PK
+        VARCHAR cor_camisa
+        VARCHAR cor_meia
+        VARCHAR cor_calcao
     }
 
     ESTADIOS {
-        int id_estadio PK
-        string nome_estadio
-        string cidade
+        INT id_estadio PK
+        VARCHAR nome_estadio
+        VARCHAR endereco
+        VARCHAR cidade
+        CHAR(2) UF
+        VARCHAR bairro
     }
 
     JUIZES {
-        string CPF_juiz PK
-        string nome_juiz
+        VARCHAR CPF_juiz PK
+        VARCHAR nome_juiz
     }
 
     PARTIDAS {
-        int id_partida PK
-        int id_estadio FK
-        string CPF_juiz FK
+        INT id_partida PK
+        INT id_estadio FK
+        VARCHAR CPF_juiz FK
     }
 
     PARTIDA_EQUIPES {
-        int id_partida PK
-        int id_equipe PK
-        int gols
-        int cartao_vermelho
-        int cartao_amarelo
+        INT id_partida PK, FK
+        INT id_equipe PK
+        INT gols
+        INT cartao_vermelho
+        INT cartao_amarelo
     }
 
-    EQUIPES ||--o{ JOGADORES : possui
-    EQUIPES ||--o{ UNIFORMES : possui
+    EQUIPES ||--|{ JOGADORES : possui
+    EQUIPES ||--|{ UNIFORMES : possui
 
     ESTADIOS ||--o{ PARTIDAS : recebe
     JUIZES ||--o{ PARTIDAS : apita
 
-    PARTIDAS ||--o{ PARTIDA_EQUIPES : possui
+    PARTIDAS ||--|{ PARTIDA_EQUIPES : possui
     EQUIPES  ||--o{ PARTIDA_EQUIPES : participa
